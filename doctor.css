@@ -1,0 +1,148 @@
+/* ------------------------------------------------------------- */
+/* --------------- DOCTOR'S PAGE STYLES ------------------------ */
+/* ------------------------------------------------------------- */
+
+/* Subtitle for Doctor Page */
+.subtitle-text {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Doctor Grid Layout */
+#doctors-grid {
+    display: grid;
+    /* 4 columns for a cleaner look with all 4 cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.doctor-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%; 
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* FOUNDER CARD STYLING */
+.founder-card {
+    border: 3px solid #0056b3; /* Highlight the Founder Card */
+}
+.founder-card:hover {
+    transform: scale(1.02); /* Less lift for the main card */
+}
+
+/* Photo Styling */
+.doctor-photo {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    display: block;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+.doctor-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0056b3; 
+    margin-bottom: 5px;
+}
+
+.specialty {
+    font-size: 16px;
+    color: #e74c3c; 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hospital-info, .experience-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Special List Styling (Visheshataein) */
+.special-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.special-list li {
+    font-size: 14px;
+    color: #34495e;
+    line-height: 2;
+}
+
+.special-list li i {
+    color: #0056b3;
+    margin-right: 8px;
+}
+
+.time-slot {
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Appointment Footer Styling */
+.appointment-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #e6f0ff;
+    border-radius: 10px;
+}
+
+.appointment-footer p {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.appointment-btn {
+    background-color: #e74c3c; /* Red button for action */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.appointment-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Small button inside the doctor card */
+.info-box .appointment-btn {
+    background-color: #388e3c; /* Green button for small action */
+    font-size: 14px;
+    padding: 8px 20px;
+}
+.info-box .appointment-btn:hover {
+    background-color: #2e7d32;
+}

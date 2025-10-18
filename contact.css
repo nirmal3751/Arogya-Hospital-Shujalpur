@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------- */
+/* --------------- CONTACT US PAGE STYLES ---------------------- */
+/* ------------------------------------------------------------- */
+
+/* Main Simple Info Layout */
+#simple-contact-info {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.hospital-name-big {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e74c3c; /* Red highlight */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-group {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd; /* Separator line */
+}
+
+.contact-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-line {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+}
+
+.info-line i {
+    color: #0056b3; /* Icon color */
+    font-size: 20px;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-right: 10px;
+}
+
+/* Subtitle for the page */
+.subtitle-text {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}

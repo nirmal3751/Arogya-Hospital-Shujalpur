@@ -1,0 +1,80 @@
+/* ------------------------------------------------------------- */
+/* --------------- DEPARTMENTS PAGE STYLES --------------------- */
+/* ------------------------------------------------------------- */
+
+/* Subtitle Style */
+.subtitle-text {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Department Grid */
+#departments-grid {
+    display: grid;
+    /* 3 cards per row */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.dept-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid transparent;
+    height: 100%; /* Ensure all cards are equal height */
+}
+
+.dept-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top-color: #0056b3; /* Blue highlight on hover */
+}
+
+/* Icon Styling */
+.dept-icon {
+    font-size: 40px;
+    color: #e74c3c; /* Red color for icons */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fcebeb; /* Very light red background */
+}
+
+/* Text Styling */
+.dept-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dept-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    min-height: 60px; /* Ensures text area is uniform */
+}
+
+/* Button/Link Styling */
+.view-more-btn {
+    font-size: 14px;
+    color: #0056b3;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    color: #e74c3c;
+}
+.view-more-btn i {
+    margin-left: 5px;
+}
