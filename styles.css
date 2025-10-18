@@ -432,3 +432,120 @@ li {
     font-size: 12px;
     color: #ccc;
 }
+
+
+/* ------------------------------------------------------------- */
+/* --------------- MOBILE RESPONSIVENESS (Max-width 768px) --------------- */
+/* ------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* --- 1. NAVBAR ADJUSTMENTS (Header) --- */
+    #top-nav {
+        display: none; /* Hide top bar on mobile to save space */
+    }
+
+    #main-nav {
+        flex-direction: column; /* Stack logo and links vertically */
+        padding: 10px 5%;
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    /* Logo and Name Section Adjustments */
+    .logo {
+        width: 100%;
+        gap: 10px;
+        justify-content: flex-start; /* Logo left-aligned on mobile */
+        margin-bottom: 5px;
+    }
+
+    .hospital-logo-img {
+        height: 45px; /* Smaller logo */
+    }
+
+    .hospital-name-text {
+        font-size: 20px; /* Smaller text */
+    }
+
+    /* Hide Navigation Links (Hamburger menu required for proper mobile navigation) */
+    .nav-links {
+        display: none; 
+    }
+    
+    /* --- 2. MAIN CONTENT & SECTIONS --- */
+    
+    .content-section {
+        margin: 30px auto;
+        padding: 0 10px; /* Less horizontal padding */
+    }
+    
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    /* 1. Introduction Section Fix (Single Column) */
+    #introduction-section {
+        padding-top: 10px;
+    }
+    .intro-container {
+        flex-direction: column; /* Image on top, Text on bottom */
+        gap: 20px;
+    }
+    .intro-image {
+        flex: 0 0 auto; /* Auto width */
+        width: 100%;
+    }
+    
+    .intro-text h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .content-section p {
+        font-size: 15px;
+    }
+
+    /* 3. Why Choose Us Section Fix (Single Column List) */
+    .benefits-list ul {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 10px;
+    }
+
+    /* 4. Key Features Grid (2 columns) */
+    #quick-links-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 2 cards per row on mobile */
+        gap: 15px;
+    }
+    .feature-link-card {
+        padding: 20px 10px;
+    }
+    .feature-icon {
+        font-size: 30px;
+        padding: 15px;
+    }
+    .link-name {
+        font-size: 16px;
+    }
+    
+    /* 5. Gallery Grid (2 columns) */
+    #gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .gallery-img {
+        height: 150px; /* Smaller height for mobile gallery */
+    }
+
+    /* --- 6. FOOTER ADJUSTMENTS --- */
+    #main-footer {
+        padding: 30px 10px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-col {
+        width: 100%;
+        min-width: auto;
+        text-align: left;
+    }
+}
